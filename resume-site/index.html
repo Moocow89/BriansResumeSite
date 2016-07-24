@@ -12,22 +12,22 @@
 <body>
     <navigation class="nav">
         <ul class="nav-list">
-            <li class="nav-item"><a href="">HOME</a></li>
-            <li class="nav-item"><a href="">ABOUT</a></li>
-            <li class="nav-item"><a href="">EXPERIENCE</a></li>
-            <li class="nav-item"><a href="">CONTACT</a></li>
+            <li class="nav-item"><a href="#home">HOME</a></li>
+            <li class="nav-item"><a href="#about">ABOUT</a></li>
+            <li class="nav-item"><a href="#experience">EXPERIENCE</a></li>
+            <li class="nav-item"><a href="#contact">CONTACT</a></li>
         </ul>
     </navigation>
 
     <div class='hero'>
 
-        <section class="home">
+        <section id="home" class="main-section">
             <h1>BRIAN PIELA</h1>
         </section>
-        <section class="about">
+        <section id="about" class="main-section">
             <h1>About</h1>
+            <h3><a href="">Bio</a></h3>
             <div id="bio" class="slideInfo-block">
-                <h3><a href="">Bio</a></h3>
                 <img src="" alt="" />
                 <div id="bio-info" class="info-block">
                     <p id="bio-descritpion" class="info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, dui vel accumsan cursus, ipsum velit feugiat nisl, non interdum leo odio quis arcu. Maecenas ornare ligula eget facilisis lacinia. Pellentesque tincidunt ornare
@@ -35,8 +35,8 @@
                         sem, eget tincidunt lacus porttitor et. Aenean mollis elementum ante sed mattis. Sed vulputate vitae tellus vel molestie.</p>
                 </div>
             </div>
+            <h3><a href="">Skills</a></h3>
             <div id="skills" class="slideInfo-block">
-                <h3><a href="">Skills</a></h3>
                 <img src="images/skills-logos/Excel-Logo.png" alt="Excel Logo" />
                 <img src="images/skills-logos/BusinessObjects-Logo.png" alt="Business Objects Logo" />
                 <img src="images/skills-logos/Teradata-Logo.png" alt="Teradata Logo" />
@@ -45,10 +45,10 @@
 
             </div>
         </section>
-        <section class="experience">
+        <section id="experience" class="main-section">
             <h1>Experience</h1>
+            <h3><a href="">Current Experience</a></h3>
             <div id="current" class="slideInfo-block">
-                <h3><a href="">Current Experience</a></h3>
                 <img src="images/SiriusXM-Logo.png" alt="SirusXM Logo" />
                 <div id="current-info" class="info-block">
                     <h4 id="current-header" class="info-header">Analyst, Campaign Development</h4>
@@ -64,8 +64,8 @@
                     </ul>
                 </div>
             </div>
+            <h3><a href="">Past Experience</a></h3>
             <div id="past" class="slideInfo-block">
-                <h3><a href="">Past Experience</a></h3>
                 <img src="images/ParxCasino-Logo.png" alt="Parx Casino Logo" />
                 <div id="past-info" class="info-block">
                     <h4 id="past-header" class="info-header">Marketing Database Manager</h4>
@@ -91,14 +91,14 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="main-section">
             <h1>Contact</h1>
             <form action="" id="contact-form">
                 <label for="name-input">Name:</label>
                 <input type="text" name="name" id="name-input">
                 <label for="email-input">E-mail:</label>
                 <input type="email" name="email" id="email-input">
-                <label for="maessage-input">Message:</label>
+                <label for="message-input">Message:</label>
                 <textarea type="text" name="messgae" id="message-input"></textarea>
             </form>
             <button type="button" id="submitFormButton">Send</button>
@@ -113,28 +113,8 @@
 
     <!--build:js js/main.min.js -->
     <script src='js/main.js'></script>
+    <script src="jquery-1.12.4.min.js"></script>
     <!-- endbuild -->
-</body>
-
-</html>
-ail:</label>
-<input type="email" name="email" id="email-input">
-<label for="maessage-input">Message:</label>
-<textarea type="text" name="messgae" id="message-input"></textarea>
-</form>
-<button type="button" id="submitFormButton">Send</button>
-</section>
-
-</div>
-<footer class=footer>
-
-</footer>
-
-
-
-<!--build:js js/main.min.js -->
-<script src='js/main.js'></script>
-<!-- endbuild -->
 </body>
 
 </html>
