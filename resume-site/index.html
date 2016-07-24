@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!--build:css css/styles.min.css-->
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <!--endbuild-->
     <title>Brian's Resume</title>
-  </head>
-  <body>
-      <p>
-        Is this working!! blah,blah,blah!Still working?
-      </p>
+</head>
+
+<body>
+    <navigation class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="">HOME</a></li>
+            <li class="nav-item"><a href="">ABOUT</a></li>
+            <li class="nav-item"><a href="">EXPERIENCE</a></li>
+            <li class="nav-item"><a href="">CONTACT</a></li>
+        </ul>
+    </navigation>
+
+    <div class='hero'>
+
+        <section class="home">
+            <h1>BRIAN PIELA</h1>
+        </section>
+        <section class="about">
+            <h1>About</h1>
+            <div id="bio" class="slideInfo-block">
+                <h3><a href="">Bio</a></h3>
+                <img src="" alt="" />
+                <div id="bio-info" class="info-block">
+                    <p id="bio-descritpion" class="info-description"></p>
+                </div>
+            </div>
+            <div id="skills" class="slideInfo-block">
+                <h3><a href="">Skills</a></h3>
+                <img src="" alt="" />
+                <p>
+
+                </p>
+            </div>
+        </section>
+        <section class="experience">
+            <h1>Experience</h1>
+            <div id="current" class="slideInfo-block">
+                <h3><a href="">Current Experience</a></h3>
+                <img src="images/SiriusXM-Logo.png" alt="SirusXM Logo" />
+                <div id="current-info" class="info-block">
+                    <h4 id="current-header" class="info-header"></h4>
+                    <p id="current-descritpion" class="info-description"></p>
+                </div>
+            </div>
+            <div id="past" class="slideInfo-block">
+                <h3><a href="">Past Experience</a></h3>
+                <img src="images/ParxCasino-Logo.png" alt="Parx Casino Logo" />
+                <div id="past-info" class="info-block">
+                    <h4 id="past-header" class="info-header"></h4>
+                    <p id="past-description" class="info-description"></p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>Contact</h1>
+            <form action="" id="contact-form">
+                <input type="text" id="name-input">
+                <input type="email" id="email-input">
+                <input type="text" id="message-input">
+            </form>
+            <button id="submitFormButton"></button>
+        </section>
+
+    </div>
+    <footer class=footer>
+
+    </footer>
 
 
-      <!--build:js js/main.min.js -->
-      <script src='js/main.js'></script>
-      <!-- endbuild -->
-  </body>
+
+    <!--build:js js/main.min.js -->
+    <script src='js/main.js'></script>
+    <!-- endbuild -->
+</body>
+
 </html>
