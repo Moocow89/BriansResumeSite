@@ -22,7 +22,9 @@
     <div class='hero'>
 
         <section id="home" class="main-section">
-            <h1>BRIAN PIELA</h1>
+            <div id="home-main" class="mainInfo-block">
+                <h1>BRIAN PIELA</h1>
+            </div>
         </section>
         <section id="about" class="main-section">
             <div id="bio" class="slideInfo-block">
@@ -35,15 +37,15 @@
             </div>
             <div id="about-main" class="mainInfo-block">
                 <h1>About</h1>
-                <h3><a href="">Bio</a></h3>
-                <h3><a href="">Skills</a></h3>
+                <h3 class="slideInfo-link"><a href="#bio">Bio</a></h3>
+                <h3 class="slideInfo-link"><a href="#skills">Skills</a></h3>
             </div>
             <div id="skills" class="slideInfo-block">
-                <img src="images/skills-logos/Excel-Logo.png" alt="Excel Logo" />
-                <img src="images/skills-logos/BusinessObjects-Logo.png" alt="Business Objects Logo" />
-                <img src="images/skills-logos/Teradata-Logo.png" alt="Teradata Logo" />
-                <img src="images/skills-logos/SQLServer-Logo.png" alt="SQL Server Logo" />
-                <img src="images/skills-logos/DB2-Logo.png" alt="DB2 Logo" />
+                <img id="sql-img" class="skills-img" src="images/skills-logos/SQLServer-Logo.png" alt="SQL Server Logo" />
+                <img id="businessObjects-img" class="skills-img" src="images/skills-logos/BusinessObjects-Logo.png" alt="Business Objects Logo" />
+                <img id="teradata-img" class="skills-img" src="images/skills-logos/Teradata-Logo.png" alt="Teradata Logo" />
+                <img id="excel-img" class="skills-img" src="images/skills-logos/Excel-Logo.png" alt="Excel Logo" />
+                <img id="db2-img" class="skills-img" src="images/skills-logos/DB2-Logo.png" alt="DB2 Logo" />
             </div>
         </section>
         <section id="experience" class="main-section">
@@ -65,8 +67,8 @@
             </div>
             <div id="experience-main" class="mainInfo-block">
                 <h1>Experience</h1>
-                <h3><a href="">Current Experience</a></h3>
-                <h3><a href="">Past Experience</a></h3>
+                <h3 class="slideInfo-link"><a href="#current">Current Experience</a></h3>
+                <h3 class="slideInfo-link"><a href="#past">Past Experience</a></h3>
             </div>
             <div id="past" class="slideInfo-block">
                 <img src="images/ParxCasino-Logo.png" alt="Parx Casino Logo" />
@@ -95,16 +97,20 @@
             </div>
         </section>
         <section id="contact" class="main-section">
-            <h1>Contact</h1>
-            <form action="" id="contact-form">
-                <label for="name-input">Name:</label>
-                <input type="text" name="name" id="name-input">
-                <label for="email-input">E-mail:</label>
-                <input type="email" name="email" id="email-input">
-                <label for="message-input">Message:</label>
-                <textarea type="text" name="messgae" id="message-input"></textarea>
-            </form>
-            <button type="button" id="submitFormButton">Send</button>
+            <div id="contact-main" class="mainInfo-block">
+                <h1>Contact</h1>
+            </div>
+            <div id="contact-form-div" class="slideInfo-block">
+                <form action="" id="contact-form">
+                    <label for="name-input">Name:</label>
+                    <input type="text" name="name" id="name-input">
+                    <label for="email-input">E-mail:</label>
+                    <input type="email" name="email" id="email-input">
+                    <label for="message-input">Message:</label>
+                    <textarea type="text" name="messgae" id="message-input"></textarea>
+                </form>
+                <button type="button" id="submitFormButton">Send</button>
+            </div>
         </section>
 
     </div>
@@ -115,8 +121,9 @@
 
 
     <!--build:js js/main.min.js -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src='js/main.js'></script>
-    <script src="jquery-1.12.4.min.js"></script>
+
     <!-- endbuild -->
 </body>
 

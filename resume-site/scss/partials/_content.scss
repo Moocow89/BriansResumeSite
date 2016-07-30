@@ -1,0 +1,24 @@
+.displayNone {
+    display: none;
+}
+.slideInfo-block {
+    background-color: $slideInfo-background;
+}
+h4 {
+    color: $slideInfo-header-color;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-align: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.skills-img {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+}

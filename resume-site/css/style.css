@@ -1,0 +1,42 @@
+.displayNone {
+  display: none; }
+
+.slideInfo-block {
+  background-color: #dfdfdf; }
+
+h4 {
+  color: #666; }
+
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center; }
+
+.skills-img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  padding: 5%;
+  margin: auto; }
+
+.mainInfo-block {
+  background: url("../img/Background-Image.JPG") no-repeat;
+  width: 100%;
+  height: auto; }
+
+h1 {
+  color: #999999; }
+
+h3 a {
+  color: #999999;
+  text-decoration: none; }
+
+h3 a:hover {
+  color: #fff857; }

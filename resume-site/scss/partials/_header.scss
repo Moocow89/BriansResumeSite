@@ -1,0 +1,15 @@
+.mainInfo-block {
+    background: url("../img/Background-Image.JPG") no-repeat;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    color: $mainInfo-header-color;
+}
+h3 a {
+    color: $mainInfo-header-color;
+    text-decoration: none;
+}
+h3 a:hover {
+    color: $nav-color-hover;
+}

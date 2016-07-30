@@ -1,0 +1,21 @@
+.displayNone {
+  display: none; }
+
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center; }
+
+.skills-img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  padding: 5%;
+  margin: auto; }
