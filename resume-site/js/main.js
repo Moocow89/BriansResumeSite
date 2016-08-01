@@ -4,23 +4,30 @@
     $(document).ready(function() {
 
         var view = {
-            displayPage: fucntion() {
-                $(".nav-item").click(function() {
-                    var target = $(this).attr("href");
+            displayPage: function() {
+                var mainSectionArray = $("section.main-section");
+                $(".nav-item").click(function(e) {
+                    for (var i = 0; i < mainSectionArray.length; i++) {
+                        if (!$(mainSectionArray[i]).hasClass("displayNone")) {
+                            $(mainSectionArray[i]).addClass("displayNone");
+                        }
+                    }
+                    var target = $(e.target).attr("href");
+                    $(target).removeClass("displayNone");
 
-                    $(target).toggle(style("display", ))
-                })
+                });
             },
             displaySlideOut: function() {
                 $(".slideInfo-block").addClass("displayNone");
-                $(".slideInfo-link").click(function() {
-                    var target = $(this).attr('href');
+                $(".slideInfo-link").click(function(e) {
+                    var target = $(e.target).attr('href');
                     $(target).slideToggle("slow");
                 });
             }
         };
 
         view.displaySlideOut();
+        view.displayPage();
     });
 
 })();

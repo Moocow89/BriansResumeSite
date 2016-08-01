@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <!--build:css css/styles.min.css-->
     <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!--endbuild-->
     <title>Brian's Resume</title>
 </head>
@@ -12,10 +14,10 @@
 <body>
     <navigation class="nav">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#home">HOME</a></li>
-            <li class="nav-item"><a href="#about">ABOUT</a></li>
-            <li class="nav-item"><a href="#experience">EXPERIENCE</a></li>
-            <li class="nav-item"><a href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
         </ul>
     </navigation>
 
@@ -26,7 +28,7 @@
                 <h1>BRIAN PIELA</h1>
             </div>
         </section>
-        <section id="about" class="main-section">
+        <section id="about" class="main-section displayNone">
             <div id="bio" class="slideInfo-block">
                 <img src="" alt="" />
                 <div id="bio-info" class="info-block">
@@ -36,7 +38,7 @@
                 </div>
             </div>
             <div id="about-main" class="mainInfo-block">
-                <h1>About</h1>
+                <h1>ABOUT</h1>
                 <h3 class="slideInfo-link"><a href="#bio">Bio</a></h3>
                 <h3 class="slideInfo-link"><a href="#skills">Skills</a></h3>
             </div>
@@ -48,7 +50,7 @@
                 <img id="db2-img" class="skills-img" src="images/skills-logos/DB2-Logo.png" alt="DB2 Logo" />
             </div>
         </section>
-        <section id="experience" class="main-section">
+        <section id="experience" class="main-section displayNone">
             <div id="current" class="slideInfo-block">
                 <img src="images/SiriusXM-Logo.png" alt="SirusXM Logo" />
                 <div id="current-info" class="info-block">
@@ -66,7 +68,7 @@
                 </div>
             </div>
             <div id="experience-main" class="mainInfo-block">
-                <h1>Experience</h1>
+                <h1>EXPERIENCE</h1>
                 <h3 class="slideInfo-link"><a href="#current">Current Experience</a></h3>
                 <h3 class="slideInfo-link"><a href="#past">Past Experience</a></h3>
             </div>
@@ -96,9 +98,9 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="main-section">
+        <section id="contact" class="main-section displayNone">
             <div id="contact-main" class="mainInfo-block">
-                <h1>Contact</h1>
+                <h1>CONTACT</h1>
             </div>
             <div id="contact-form-div" class="slideInfo-block">
                 <form action="" id="contact-form">
@@ -121,8 +123,9 @@
 
 
     <!--build:js js/main.min.js -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src='js/main.min.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src='js/main.min.js'></script>
 
     <!-- endbuild -->
 </body>

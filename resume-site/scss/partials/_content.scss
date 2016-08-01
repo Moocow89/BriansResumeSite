@@ -6,6 +6,14 @@
 }
 h4 {
     color: $slideInfo-header-color;
+    font-family: $bodyText;
+    font-weight: bold;
+}
+li {
+    font-family: $bodyText;
+}
+p {
+    font-family: $bodyText;
 }
 .skills {
     display: flex;
