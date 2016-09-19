@@ -368,20 +368,26 @@ textarea {
   display: none; }
 
 .slideInfo-block {
-  background-color: #dfdfdf; }
+  background: linear-gradient(left, #dfdfdf 5%, #333);
+  padding: 40px; }
 
 h4 {
-  color: #666; }
+  color: #666;
+  font-family: "Playfair Display", serif;
+  font-weight: bold; }
+
+.experience-img {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 20px 0;
+  width: 20%; }
 
 li {
-  font-family: PlayfairDisplay; }
+  font-family: "Playfair Display", serif; }
 
-@font-face {
-  li {
-    font-family: "PlayfairDisplay";
-    font-style: normal;
-    font-weight: normal;
-    src: url("../../fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay") format("svg"); } }
+p {
+  font-family: "Playfair Display", serif; }
 
 .skills {
   display: -ms-flexbox;
@@ -433,3 +439,16 @@ h3 a {
 
 h3 a:hover {
   color: #fff857; }
+
+.nav {
+  position: absolute;
+  top: 100px;
+  z-index: 2; }
+
+.nav-list {
+  list-style-type: none; }
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: Montserrat; }

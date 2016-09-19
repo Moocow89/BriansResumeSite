@@ -2,12 +2,19 @@
     display: none;
 }
 .slideInfo-block {
-    background-color: $slideInfo-background;
+    background: linear-gradient(left, $slideInfo-background 5%, #333);
+    padding: 40px;
 }
 h4 {
     color: $slideInfo-header-color;
     font-family: $bodyText;
     font-weight: bold;
+}
+.experience-img {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+    width: 20%;
 }
 li {
     font-family: $bodyText;

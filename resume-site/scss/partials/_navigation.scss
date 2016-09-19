@@ -1,0 +1,13 @@
+.nav {
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+}
+.nav-list {
+    list-style-type: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: $headerText;
+}
