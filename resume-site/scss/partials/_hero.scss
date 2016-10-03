@@ -1,0 +1,25 @@
+#hero-section {
+    display: flex;
+    padding: 0;
+    border-bottom: 2px solid $headers;
+}
+#hero-header {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    top: 140px;
+    font-size: 75px;
+    font-weight: 25;
+    color: #000;
+    z-index: 1;
+    text-shadow: 0 1px 3px $headers;
+}
+#hero-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}

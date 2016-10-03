@@ -1,33 +1,54 @@
 (function() {
     "use strict"
 
-    $(document).ready(function() {
+    $(window).scroll(function() {
+        //gets top of window
+        var scrollTop = $(window).scrollTop();
+        //gets position I want animation to start at
+        var scrollToSkills = $('#skills-section').offset().top - 250;
+        //checks if top of window is at poition I want animationt to start
+        if (scrollTop >= scrollToSkills) {
+            $(window).off("scroll");
+            $(".skill-bar >span").css("animation-play-state", "running");
+        }
 
-        var view = {
-            displayPage: function() {
-                var mainSectionArray = $("section.main-section");
-                $(".nav-item").click(function(e) {
-                    for (var i = 0; i < mainSectionArray.length; i++) {
-                        if (!$(mainSectionArray[i]).hasClass("displayNone")) {
-                            $(mainSectionArray[i]).addClass("displayNone");
-                        }
-                    }
-                    var target = $(e.target).attr("href");
-                    $(target).removeClass("displayNone");
+        if (scrollTop > 71) {
+            $(".nav").hide();
+        }
+        //creates a fixed navbar after scrolling down
+        if (scrollTop >= 300) {
+            $(".nav").fadeIn("slow");
+            $(".nav").attr("style", "position: fixed !important");
 
-                });
-            },
-            displaySlideOut: function() {
-                $(".slideInfo-block").addClass("displayNone");
-                $(".slideInfo-link").click(function(e) {
-                    var target = $(e.target).attr('href');
-                    $(target).slideToggle("slow");
-                });
-            }
-        };
+        }
 
-        view.displaySlideOut();
-        view.displayPage();
+    });
+
+    //experience logos info fadeIn and fadeOut
+    $(".company-fade-square").mouseenter(function(e) {
+        e.preventDefault();
+        var target = $(e.target);
+        console.log(e);
+        target.css("opacity", "1");
+        $(".company-header").css("opacity", "1");
+        $(".learn-more").css("opacity", "1");
+    });
+
+
+    //show sirius text when click on picture
+    $("#sirius-learn-more").click(function(e) {
+        e.preventDefault();
+        var target = $(e.target);
+        $("#sirius-logo").toggleClass("slideLeft");
+        $("#sirius-text").toggleClass("fadeIn");
+    });
+
+    //show parx text when click on picture
+    $("#parx-learn-more").click(function(e) {
+        e.preventDefault();
+        var target = $(e.target);
+        $("#parx-logo").toggleClass("slideRight");
+        $("#parx-text").toggleClass("fadeIn");
     });
 
 })();

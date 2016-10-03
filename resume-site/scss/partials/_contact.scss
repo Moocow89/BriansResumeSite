@@ -1,0 +1,30 @@
+#contact-section {
+    background: $primary;
+    padding: 75px 0;
+}
+#contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    min-height: 150px;
+    width: 100%;
+    margin: 30px auto;
+    color: $secondary;
+}
+#email {
+    position: relative;
+    vertical-align: middle;
+    font-size: 20px;
+    &:hover {
+        text-shadow: 0 1px 4px $accent;
+    }
+}
+#linkedin {
+    position: relative;
+    top: 12px;
+    left: -75px;
+    font-size: 30px;
+    &:hover {
+        text-shadow: 0 1px 4px $accent;
+    }
+}

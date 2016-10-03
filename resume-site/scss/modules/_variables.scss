@@ -1,7 +1,13 @@
-$slideInfo-background: #dfdfdf;
-$slideInfo-header-color: #666;
-$mainInfo-header-color: #edeaea;
-$nav-color: #dfdfdf;
-$nav-color-hover: #fff857;
-$bodyText: 'Playfair Display', serif;
-$headerText: Montserrat;
+@font-face {
+    font-family: 'bebas';
+    src: url('fonts/bebas_neue/bebas_neue-webfont.woff2') format('woff2'), url('fonts/bebas_neue/bebas_neue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+$primary: #C5E3E5;
+$headers: #01454E;
+$secondary: #01454F;
+$text: #535755;
+$accent: #FF9100;
+$headerFont: 'bebas', Fallback, sans-serif;
+$bodyFont: 'Montserrat', sans-serif;

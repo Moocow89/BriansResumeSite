@@ -1,39 +1,27 @@
-.displayNone {
-    display: none;
-}
-.slideInfo-block {
-    background: linear-gradient(left, $slideInfo-background 5%, #333);
-    padding: 40px;
-}
-h4 {
-    color: $slideInfo-header-color;
-    font-family: $bodyText;
-    font-weight: bold;
-}
-.experience-img {
+body {
     display: flex;
-    position: relative;
-    padding: 20px 0;
-    width: 20%;
+    flex-direction: column;
+    margin: 0;
+    font-family: $bodyFont;
 }
-li {
-    font-family: $bodyText;
-}
-p {
-    font-family: $bodyText;
-}
-.skills {
+.info-section {
     display: flex;
-    flex-wrap: wrap;
-    flex-align: center;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    height: 15%;
+    width: 100%;
+    padding: 125px 0;
+    background: #fff;
+}
+.section-header {
+    font-family: $headerFont;
+    font-size: 30px;
+    color: $headers;
+    width: 100%;
+    padding-bottom: 75px;
     text-align: center;
 }
-.skills-img {
-    display: inline-block;
-    width: 20%;
-    height: auto;
-    padding: 5%;
+.subsection {
+    display: flex;
+    width: 90%;
     margin: auto;
 }

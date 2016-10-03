@@ -1,0 +1,37 @@
+#about-info-section {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+#about-text {
+    width: 55%;
+    padding: 50px;
+    color: $text;
+}
+/*#about-img-conatiner1, #about-img-conatiner2{
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+
+
+#about-img-conatiner2{
+ width: 355px;
+  height: 355px;
+  transform: rotate(-45deg) translateY(-74px);
+
+}*/
+#about-img-conatiner1 {
+    //transform: rotate(45deg) translateY(10px);
+    display: flex;
+    margin: auto;
+    width: 40%;
+}
+#about-img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

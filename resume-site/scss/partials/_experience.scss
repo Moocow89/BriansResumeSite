@@ -1,0 +1,87 @@
+.company-section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 300px;
+}
+.company-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 250px;
+    background: $headers;
+    margin: 20px auto;
+    border: 1px solid $headers;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.slideLeft {
+    animation: slideLeft 1s linear 0s forwards;
+}
+@keyframes slideLeft {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 200px;
+    }
+}
+.slideRight {
+    animation: slideRight 2s linear 0s forwards;
+}
+@keyframes slideRight {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 600px;
+    }
+}
+.company-fade-square {
+    position: relative;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4);
+}
+.company-header {
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+.learn-more {
+    position: relative;
+    opacity: 0;
+    color: #fff;
+    width: 100%;
+    top: -30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    &:hover {
+        color: $accent;
+        text-decoration: underline;
+    }
+}
+.company-text {
+    display: flex;
+    opacity: 0;
+    width: 45%;
+    color: $text;
+}
+#sirius-text {
+    position: relative;
+    left: 450px;
+}
+.fadeIn {
+    animation: fadeIn 2s linear 0s forwards;
+}

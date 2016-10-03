@@ -6,120 +6,104 @@
     <!--build:css css/styles.min.css-->
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!--endbuild-->
-    <title>Brian's Resume</title>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <title>Brian Piela's Resume</title>
 </head>
 
 <body>
     <navigation class="nav">
+        <img class="nav-logo" src="images/Brian-Logo.png" alt="Brian Piela" />
         <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills-section" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#experience-section" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
         </ul>
     </navigation>
-
-    <div class='hero'>
-
-        <section id="home" class="main-section">
-            <div id="home-main" class="mainInfo-block">
-                <h1>BRIAN PIELA</h1>
-            </div>
-        </section>
-        <section id="about" class="main-section displayNone">
-            <div id="bio" class="slideInfo-block">
-                <img src="" alt="" />
-                <div id="bio-info" class="info-block">
-                    <p id="bio-descritpion" class="info-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, dui vel accumsan cursus, ipsum velit feugiat nisl, non interdum leo odio quis arcu. Maecenas ornare ligula eget facilisis lacinia. Pellentesque tincidunt ornare
-                        ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper eros lorem, eu imperdiet metus convallis ut. In nec odio neque. Etiam sit amet sem condimentum, tempus dui sit amet, congue augue. Nulla luctus arcu
-                        sem, eget tincidunt lacus porttitor et. Aenean mollis elementum ante sed mattis. Sed vulputate vitae tellus vel molestie.</p>
+    <section id="hero-section" class="info-section">
+        <h2 id="hero-header">BRIAN PIELA</h2>
+        <img src="images/Resume-Background.jpeg" alt="nyc skyline" id="hero-img" class="section-img" />
+    </section>
+    <section id="about-section" class="info-section">
+        <h2 id="about-header" class="section-header">ABOUT</h2>
+        <div id="about-info-section" class="subsection">
+            <p class="section-text" id="about-text">Lorem ipsum dolor sit amet, ad eum prima consequuntur, erat periculis vix et. Id sed habeo deseruisse, eu justo propriae mel, commodo phaedrum dissentiet eu per. Vel oportere corrumpit no, in qui zril vituperatoribus, no usu nostro accommodare.
+                Cu solet docendi alienum vim, persius suscipiantur concludaturque vel in. Mei torquatos quaerendum theophrastus cu, numquam lucilius invenire ut quo. No omnes solet atomorum mel, cum facer iisque liberavisse eu.</p>
+            <div id="about-img-conatiner1">
+                <div id="about-img-conatiner2">
+                    <img src="images/Brian-Photo.jpg" alt="portrait" id="about-img" class="section-img" />
                 </div>
             </div>
-            <div id="about-main" class="mainInfo-block">
-                <h1>ABOUT</h1>
-                <h3 class="slideInfo-link"><a href="#bio">Bio</a></h3>
-                <h3 class="slideInfo-link"><a href="#skills">Skills</a></h3>
-            </div>
-            <div id="skills" class="slideInfo-block">
-                <img id="sql-img" class="skills-img" src="images/skills-logos/SQLServer-Logo.png" alt="SQL Server Logo" />
-                <img id="businessObjects-img" class="skills-img" src="images/skills-logos/BusinessObjects-Logo.png" alt="Business Objects Logo" />
-                <img id="teradata-img" class="skills-img" src="images/skills-logos/Teradata-Logo.png" alt="Teradata Logo" />
-                <img id="excel-img" class="skills-img" src="images/skills-logos/Excel-Logo.png" alt="Excel Logo" />
-                <img id="db2-img" class="skills-img" src="images/skills-logos/DB2-Logo.png" alt="DB2 Logo" />
-            </div>
-        </section>
-        <section id="experience" class="main-section displayNone">
-            <div id="current" class="slideInfo-block">
-                <img class="experience-img" src="images/SiriusXM-Logo.png" alt="SirusXM Logo" />
-                <div id="current-info" class="info-block">
-                    <h4 id="current-header" class="info-header">Analyst, Campaign Development</h4>
-                    <h5 id="current-subheader" class="info-date">May 2015 - Present</h5>
-                    <ul id="current-descritpion" class="info-description-list">
-                        <li>Create SQL scripts for tables, views and data manipulation for the marketing team </li>
-                        <li>Design queries using Teradata Assistant to elicit relevant customer information for development of reports utilized by marketing in forecasting, trending and results analysis.</li>
-                        <li>Fulfilled customer segmentation and analysis requests within hierarchical database model</li>
-                        <li>Propose recommendations with respect to quality, correctness, and adherence to marketing standards</li>
-                        <li>Review proposed processes and solutions in order to identify technical feasibility</li>
-                        <li>Built marketing campaigns within Teradata CIM Aprimo</li>
-                        <li>Conduct root-cause analysis for campaigns that were under investigation and provided possible solutions</li>
-                    </ul>
+        </div>
+    </section>
+    <section id="skills-section" class="info-section">
+        <h2 id="skills-header" class="section-header">SKILLS</h2>
+        <ul class="skills-list">
+            <li id="teradata" class="skill">Teradata
+                <div class="skill-bar"><span></span></div>
+                <div class="ranking">
+                    <h4 class="novice">novice</h4>
+                    <h4 class="expert">expert</h4>
+                </div>
+            </li>
+            <li id="excel" class="skill">Microsoft Excel
+                <div class="skill-bar"><span></span></div>
+                <div class="ranking">
+                    <h4 class="novice">novice</h4>
+                    <h4 class="expert">expert</h4>
+                </div>
+            </li>
+            <li id="SQL" class="skill">SQL
+                <div class="skill-bar"><span></span></div>
+                <div class="ranking">
+                    <h4 class="novice">novice</h4>
+                    <h4 class="expert">expert</h4>
+                </div>
+            </li>
+            <li id="businessObjects" class="skill">SAP Business Objects
+                <div class="skill-bar"><span></span></div>
+                <div class="ranking">
+                    <h4 class="novice">novice</h4>
+                    <h4 class="expert">expert</h4>
+                </div>
+            </li>
+            <li id="DB2" class="skill">IBM DB2
+                <div class="skill-bar"><span></span></div>
+                <div class="ranking">
+                    <h4 class="novice">novice</h4>
+                    <h4 class="expert">expert</h4>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="experience-section" class="info-section">
+        <h2 id="experience-header" class="section-header">EXPERIENCE</h2>
+        <div id="sirius-section" class="company-section">
+            <div id="sirius-logo" class="company-logo">
+                <div id="sirius-fade-square" class="company-fade-square">
+                    <h4 id="sirius-header" class="company-header">Sirius XM<br>Radio</h4>
+                    <a href="#sirius-text" id="sirius-learn-more" class="learn-more">Learn more</a>
                 </div>
             </div>
-            <div id="experience-main" class="mainInfo-block">
-                <h1>EXPERIENCE</h1>
-                <h3 class="slideInfo-link"><a href="#current">Current Experience</a></h3>
-                <h3 class="slideInfo-link"><a href="#past">Past Experience</a></h3>
-            </div>
-            <div id="past" class="slideInfo-block">
-                <img class="experience-img" src="images/ParxCasino-Logo.png" alt="Parx Casino Logo" />
-                <div id="past-info" class="info-block">
-                    <h4 id="past-header" class="info-header">Marketing Database Manager</h4>
-                    <h5 id="past-subheader" class="info-date">July 2008 - May 2015</h5>
-                    <ul id="past-description" class="info-description-list">
-                        <li>Develop training programs for and manage the Database Marketing team</li>
-                        <li>Author SQL scripts utilizing DBvisualizer and Teradata SQL Assistant</li>
-                        <li>Manage US Postal Service permits</li>
-                        <li>Design and implement segmentation rules and lists for all marketing campaigns</li>
-                        <li>Develop, test and deploy direct mail/email campaigns and initiatives</li>
-                        <li>Cultivate reports and analyze database campaign performance in all channels to pinpoint areas for growth potential</li>
-                        <li>Responsible for campaign production schedule and relationship development with relevant departments/vendors</li>
-                        <li>Manage database marketing budget and monthly financial reports totaling $1.8 million annually</li>
-                        <li>Responsible for submitting departmental purchase requests for all direct marketing related jobs</li>
-                        <li>Lead ad hoc project teams and act as a liaison between different departments to ensure projects stay on track, meet deadlines and are profitable</li>
-                        <li>Coordinate with creative team to ensure marketing campaigns are executed to specifications</li>
-                        <li>Monitor database hygiene and offer distribution</li>
-                        <li>Build strategy for and implement all system setups utilizing CMS for events, promotions and marketing programs</li>
-                        <li>Oversee adherence to gaming regulations, policies and procedures</li>
-                        <li>Direct system training involving new processes and technical procedures for all operations staff</li>
-
-                    </ul>
+            <p id="sirius-text" class="company-text">Lorem ipsum dolor sit amet, ad eum prima consequuntur, erat periculis vix et. Id sed habeo deseruisse, eu justo propriae mel, commodo phaedrum dissentiet eu per. Vel oportere corrumpit no, in qui zril vituperatoribus, no usu nostro accommodare.</p>
+        </div>
+        <div id="parx-section" class="company-section">
+            <p id="parx-text" class="company-text">Lorem ipsum dolor sit amet, ad eum prima consequuntur, erat periculis vix et. Id sed habeo deseruisse, eu justo propriae mel, commodo phaedrum dissentiet eu per. Vel
+                <div id="parx-logo" class="company-logo">
+                    <div id="parx-fade-square" class="company-fade-square">
+                        <h4 id="parx-header" class="company-header">PARX<br>Casino</h4>
+                        <a href="#parx-text" id="parx-learn-more" class="learn-more">Learn more</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact" class="main-section displayNone">
-            <div id="contact-main" class="mainInfo-block">
-                <h1>CONTACT</h1>
-            </div>
-            <div id="contact-form-div" class="slideInfo-block">
-                <form action="" id="contact-form">
-                    <label for="name-input">Name:</label>
-                    <input type="text" name="name" id="name-input">
-                    <label for="email-input">E-mail:</label>
-                    <input type="email" name="email" id="email-input">
-                    <label for="message-input">Message:</label>
-                    <textarea type="text" name="messgae" id="message-input"></textarea>
-                </form>
-                <button type="button" id="submitFormButton">Send</button>
-            </div>
-        </section>
-
-    </div>
-    <footer class=footer>
-
+        </div>
+    </section>
+    <footer id="contact-section" class="footer">
+        <h2 id="contact-header" class="section-header">CONTACT</h2>
+        <div id="contact-info" class="section-text">
+            <p id="email" class="contact-links"> Brian.Piela@gmail.com</p>
+            <a id="linkedin" class="contact-links"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </div>
     </footer>
-
 
 
     <!--build:js js/main.min.js -->
